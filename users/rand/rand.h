@@ -97,7 +97,7 @@ uint16_t encoder_rotated_timer;
 #define _____________________LOWER_L3_______________________ KC_LSFT, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX
 
 #define _____________________LOWER_R1_______________________ _______________NAV_1______________, XXXXXXX, K_MDSH
-#define _____________________LOWER_R2_______________________ XXXXXXX, KC_LCBR, KC_RCBR, KC_QUES, KC_PLUS, KC_PIPE
+#define _____________________LOWER_R2_______________________ XXXXXXX, KC_UNDS, KC_PLUS, KC_LCBR, KC_RCBR, KC_PIPE
 #define _____________________LOWER_R3_______________________ XXXXXXX, _______________NAV_1______________, KC_ENT
 
 #define _____________________ADJUST_L1______________________ M_MAKE, EEP_RST, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX
