@@ -48,8 +48,8 @@ uint16_t encoder_rotated_timer;
 #define K_MDSH LSFT(LALT(KC_MINS))
 
 // Layer Keys
-#define LT_LOW LT(_LOWER, KC_ENT)
-#define LT_RAI LT(_RAISE, KC_SPC)
+#define LT_LOW MO(_LOWER)
+#define LT_RAI MO(_RAISE)
 
 // Mod-Tap Keys
 #define MT_DEL MT(MOD_LALT | MOD_LSFT, KC_DEL)
@@ -74,7 +74,7 @@ uint16_t encoder_rotated_timer;
 
 #define _____________________GAMING_L1_____________________ T_TAB, KC_Q, KC_W, KC_E, KC_R, KC_T
 #define _____________________GAMING_L2_____________________ KC_LCTL, KC_A, KC_S, KC_D, KC_F, KC_G
-#define _____________________GAMING_L3_____________________ KC_N, KC_Z, KC_X, KC_C, KC_V, KC_B
+#define _____________________GAMING_L3_____________________ KC_LSFT, KC_Z, KC_X, KC_C, KC_V, KC_B
 
 #define _____________________GAMING_R1_____________________ KC_Y, KC_U, KC_I, KC_O, KC_P, KC_BSPC
 #define _____________________GAMING_R2_____________________ KC_H, KC_J, KC_K, KC_L, KC_SCLN, KC_QUOT
