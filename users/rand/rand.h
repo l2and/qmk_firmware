@@ -72,7 +72,7 @@ uint16_t encoder_rotated_timer;
 #define _____________________DVORAK_R2______________________ KC_D, KC_H, KC_T, KC_N, KC_S, KC_SLSH
 #define _____________________DVORAK_R3______________________ KC_B, KC_M, KC_W, KC_V, KC_Z, MT_EQL
 
-#define _____________________GAMING_L1_____________________ T_TAB, KC_Q, KC_W, KC_E, KC_R, KC_T
+#define _____________________GAMING_L1_____________________ KC_TAB, KC_Q, KC_W, KC_E, KC_R, KC_T
 #define _____________________GAMING_L2_____________________ KC_LCTL, KC_A, KC_S, KC_D, KC_F, KC_G
 #define _____________________GAMING_L3_____________________ KC_N, KC_Z, KC_X, KC_C, KC_V, KC_B
 
