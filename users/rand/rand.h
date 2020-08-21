@@ -64,7 +64,7 @@ uint16_t encoder_rotated_timer;
 #define _____________________QWERTY_R2______________________ KC_H, KC_J, KC_K, KC_L, KC_SCLN, KC_QUOT
 #define _____________________QWERTY_R3______________________ KC_N, KC_M, KC_COMM, KC_DOT, KC_SLSH, KC_ENT
 
-#define _____________________DVORAK_L1______________________ T_TAB, KC_QUOT, KC_COMM, KC_DOT, KC_P, KC_Y
+#define _____________________DVORAK_L1______________________ KC_TAB, KC_QUOT, KC_COMM, KC_DOT, KC_P, KC_Y
 #define _____________________DVORAK_L2______________________ T_ESC, KC_A, KC_O, KC_E, KC_U, KC_I
 #define _____________________DVORAK_L3______________________ KC_LSFT, KC_SCLN, KC_Q, KC_J, KC_K, KC_X
 
