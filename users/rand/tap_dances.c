@@ -105,6 +105,7 @@ qk_tap_dance_action_t tap_dance_actions[] = {
   [TD_TAB_CTRLTAB]  = ACTION_TAP_DANCE_DOUBLE(KC_TAB, LCTL(KC_TAB)),
   [TD_GRV_CTRLGRV]  = ACTION_TAP_DANCE_DOUBLE(KC_GRV, LGUI(KC_GRV)),
   [TD_GUI_GUISPC]   = ACTION_TAP_DANCE_DOUBLE(KC_LGUI, LGUI(KC_SPC)),
+  [TD_TILD_GRV]   = ACTION_TAP_DANCE_DOUBLE(KC_GRV),
 
   // Advanced Tap Dances
   [TD_COPY_PASTE_APP] = ACTION_TAP_DANCE_FN_ADVANCED_TIME(NULL, copy_paste_app_finished, copy_paste_app_reset, 300),

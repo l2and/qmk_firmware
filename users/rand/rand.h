@@ -50,57 +50,76 @@ uint16_t encoder_rotated_timer;
 // Layer Keys
 #define LT_LOW MO(_LOWER)
 #define LT_RAI MO(_RAISE)
+#define LT_CFL MO(_FL)
 
 // Mod-Tap Keys
 #define MT_DEL MT(MOD_LALT | MOD_LSFT, KC_DEL)
 #define MT_EQL MT(MOD_RSFT, KC_EQL) 
 
 // Layout blocks
-#define _____________________QWERTY_L1______________________ KC_TAB, KC_Q, KC_W, KC_E, KC_R, KC_T
-#define _____________________QWERTY_L2______________________ T_ESC, KC_A, KC_S, KC_D, KC_F, KC_G
-#define _____________________QWERTY_L3______________________ KC_LSFT, KC_Z, KC_X, KC_C, KC_V, KC_B
+#if defined(KEYBOARD_crkbd_rev1) || defined(KEYBOARD_candybar_lefty)
+//Split layout
+  #define _____________________QWERTY_L1______________________ KC_TAB, KC_Q, KC_W, KC_E, KC_R, KC_T
+  #define _____________________QWERTY_L2______________________ T_ESC, KC_A, KC_S, KC_D, KC_F, KC_G
+  #define _____________________QWERTY_L3______________________ KC_LSFT, KC_Z, KC_X, KC_C, KC_V, KC_B
 
-#define _____________________QWERTY_R1______________________ KC_Y, KC_U, KC_I, KC_O, KC_P, KC_BSPC
-#define _____________________QWERTY_R2______________________ KC_H, KC_J, KC_K, KC_L, KC_SCLN, KC_QUOT
-#define _____________________QWERTY_R3______________________ KC_N, KC_M, KC_COMM, KC_DOT, KC_SLSH, KC_ENT
+  #define _____________________QWERTY_R1______________________ KC_Y, KC_U, KC_I, KC_O, KC_P, KC_BSPC
+  #define _____________________QWERTY_R2______________________ KC_H, KC_J, KC_K, KC_L, KC_SCLN, KC_QUOT
+  #define _____________________QWERTY_R3______________________ KC_N, KC_M, KC_COMM, KC_DOT, KC_SLSH, KC_ENT
 
-#define _____________________DVORAK_L1______________________ KC_TAB, KC_QUOT, KC_COMM, KC_DOT, KC_P, KC_Y
-#define _____________________DVORAK_L2______________________ T_ESC, KC_A, KC_O, KC_E, KC_U, KC_I
-#define _____________________DVORAK_L3______________________ KC_LSFT, KC_SCLN, KC_Q, KC_J, KC_K, KC_X
+  #define _____________________DVORAK_L1______________________ KC_TAB, KC_QUOT, KC_COMM, KC_DOT, KC_P, KC_Y
+  #define _____________________DVORAK_L2______________________ T_ESC, KC_A, KC_O, KC_E, KC_U, KC_I
+  #define _____________________DVORAK_L3______________________ KC_LSFT, KC_SCLN, KC_Q, KC_J, KC_K, KC_X
 
-#define _____________________DVORAK_R1______________________ KC_F, KC_G, KC_C, KC_R, KC_L, KC_BSLS
-#define _____________________DVORAK_R2______________________ KC_D, KC_H, KC_T, KC_N, KC_S, KC_SLSH
-#define _____________________DVORAK_R3______________________ KC_B, KC_M, KC_W, KC_V, KC_Z, MT_EQL
+  #define _____________________DVORAK_R1______________________ KC_F, KC_G, KC_C, KC_R, KC_L, KC_BSLS
+  #define _____________________DVORAK_R2______________________ KC_D, KC_H, KC_T, KC_N, KC_S, KC_SLSH
+  #define _____________________DVORAK_R3______________________ KC_B, KC_M, KC_W, KC_V, KC_Z, MT_EQL
 
-#define _____________________GAMING_L1_____________________ KC_TAB, KC_Q, KC_W, KC_E, KC_R, KC_T
-#define _____________________GAMING_L2_____________________ KC_LCTL, KC_A, KC_S, KC_D, KC_F, KC_G
-#define _____________________GAMING_L3_____________________ KC_LSFT, KC_Z, KC_X, KC_C, KC_V, KC_B
+  #define _____________________GAMING_L1_____________________ KC_TAB, KC_Q, KC_W, KC_E, KC_R, KC_T
+  #define _____________________GAMING_L2_____________________ KC_LCTL, KC_A, KC_S, KC_D, KC_F, KC_G
+  #define _____________________GAMING_L3_____________________ KC_LSFT, KC_Z, KC_X, KC_C, KC_V, KC_B
 
-#define _____________________GAMING_R1_____________________ KC_Y, KC_U, KC_I, KC_O, KC_P, KC_BSPC
-#define _____________________GAMING_R2_____________________ KC_H, KC_J, KC_K, KC_L, KC_SCLN, KC_QUOT
-#define _____________________GAMING_R3_____________________ KC_K, KC_M, KC_COMM, KC_DOT, KC_SLSH, KC_ENT
+  #define _____________________GAMING_R1_____________________ KC_Y, KC_U, KC_I, KC_O, KC_P, KC_BSPC
+  #define _____________________GAMING_R2_____________________ KC_H, KC_J, KC_K, KC_L, KC_SCLN, KC_QUOT
+  #define _____________________GAMING_R3_____________________ KC_K, KC_M, KC_COMM, KC_DOT, KC_SLSH, KC_ENT
 
-#define _____________________NUM_LEFT_______________________ T_GRV, KC_1, KC_2, KC_3, KC_4, KC_5
-#define _____________________NUM_RIGHT______________________ KC_6, KC_7, KC_8, KC_9, KC_0, KC_BSPC
+  #define ______________________MOD_4________________________ KC_LCTL, KC_LALT, T_GUI, LT_CFL, KC_SPC, _______________NAV_1______________
 
-#define _____________________RAISE_L2_______________________ KC_DEL, KC_F1, KC_F2, KC_F3, KC_F4, KC_F5
-#define _____________________RAISE_L3_______________________ KC_LSFT, KC_F7, KC_F8, KC_F9, KC_F10, KC_F11
+  #define _____________________NUM_LEFT_______________________ T_GRV, KC_1, KC_2, KC_3, KC_4, KC_5
+  #define _____________________NUM_RIGHT______________________ KC_6, KC_7, KC_8, KC_9, KC_0, KC_BSPC
 
-#define _____________________RAISE_R2_______________________ KC_F6, KC_MINS, KC_EQL, KC_LBRC, KC_RBRC, KC_BSLS
-#define _____________________RAISE_R3_______________________ KC_F12, _______________NAV_1______________, KC_ENT
+  #define _____________________RAISE_L2_______________________ KC_DEL, KC_F1, KC_F2, KC_F3, KC_F4, KC_F5
+  #define _____________________RAISE_L3_______________________ KC_LSFT, KC_F7, KC_F8, KC_F9, KC_F10, KC_F11
 
-#define _____________________SYM_LEFT_______________________ KC_TILD, KC_EXLM, KC_AT, KC_HASH, KC_DLR, KC_PERC
-#define _____________________SYM_RIGHT______________________ KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, KC_DEL
+  #define _____________________RAISE_R2_______________________ KC_F6, KC_MINS, KC_EQL, KC_LBRC, KC_RBRC, KC_BSLS
+  #define _____________________RAISE_R3_______________________ KC_F12, _______________NAV_1______________, KC_ENT
 
-#define _____________________LOWER_L1_______________________ M_XXX2, M_XXX3, XXXXXXX, XXXXXXX, XXXXXXX, K_CSCN
-#define _____________________LOWER_L2_______________________ T_ESC, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX
-#define _____________________LOWER_L3_______________________ KC_LSFT, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX
+  #define _____________________SYM_LEFT_______________________ KC_TILD, KC_EXLM, KC_AT, KC_HASH, KC_DLR, KC_PERC
+  #define _____________________SYM_RIGHT______________________ KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, KC_DEL
 
-#define _____________________LOWER_R1_______________________ _______________NAV_1______________, XXXXXXX, K_MDSH
-#define _____________________LOWER_R2_______________________ XXXXXXX, KC_UNDS, KC_PLUS, KC_LCBR, KC_RCBR, KC_PIPE
-#define _____________________LOWER_R3_______________________ XXXXXXX, _______________NAV_1______________, KC_ENT
+  #define _____________________LOWER_L1_______________________ M_XXX2, M_XXX3, XXXXXXX, XXXXXXX, XXXXXXX, K_CSCN
+  #define _____________________LOWER_L2_______________________ T_ESC, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX
+  #define _____________________LOWER_L3_______________________ KC_LSFT, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX
 
-#define _____________________ADJUST_L1______________________ M_MAKE, EEP_RST, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX
+  #define _____________________LOWER_R1_______________________ _______________NAV_1______________, XXXXXXX, K_MDSH
+  #define _____________________LOWER_R2_______________________ XXXXXXX, KC_UNDS, KC_PLUS, KC_LCBR, KC_RCBR, KC_PIPE
+  #define _____________________LOWER_R3_______________________ XXXXXXX, _______________NAV_1______________, KC_ENT
+
+  #define _____________________ADJUST_L1______________________ M_MAKE, EEP_RST, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX
+
+#else
+// candybar layout
+  #define _____________________QWERTY_1______________________ T_ESC, KC_Q, KC_W, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, KC_BSPC, KC_DEL
+  #define _____________________QWERTY_2______________________ KC_TAB , KC_A, KC_S, KC_D, KC_F, KC_G, KC_H, KC_J, KC_K, KC_L, KC_SCLN, KC_QUOT
+  #define _____________________QWERTY_3______________________ KC_LSFT, KC_Z, KC_X, KC_C, KC_V, KC_B, KC_N, KC_M, KC_COMM, KC_DOT, KC_SLSH, KC_ENT
+
+  #define ______________________MOD_4________________________ KC_LCTL, KC_LALT, T_GUI, LT_CFL, KC_SPC, _______________NAV_1______________
+
+  #define ____________________FUNCTION_1_____________________ T_TILD, KC_EXLM, KC_AT, KC_HASH, KC_DLR, KC_PERC, KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, KC_BSPC, KC_DEL
+  #define ____________________FUNCTION_2_____________________ XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_UNDS, KC_PLUS, KC_LCBR, KC_RCBR, KC_PIPE
+  #define ____________________FUNCTION_3_____________________ XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_MINS, KC_EQL, KC_LBRC, KC_RBRC, KC_BSLS
+#endif
+
 
 #if defined(RGB_MATRIX_ENABLE) || defined(RGBLIGHT_ENABLE)
   #define _____________________ADJUST_L2______________________ M_VRSN, M_MALL, RGB_SPI, RGB_SAI, RGB_HUI, RGB_VAI
@@ -119,9 +138,15 @@ uint16_t encoder_rotated_timer;
 #endif
 #define _____________________ADJUST_R2______________________ XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX
 
-#define _____________________NUMPAD_1_______________________ T_Y, KC_P7, KC_P8, KC_P9, KC_PPLS, KC_PAST
-#define _____________________NUMPAD_2_______________________ XXXXXXX, KC_P4, KC_P5, KC_P6, KC_PMNS, KC_PSLS
-#define _____________________NUMPAD_3_______________________ KC_P0, KC_P1, KC_P2, KC_P3, KC_PDOT, KC_COLN
+#define _____________NUMPAD_1_____________ KC_P7, KC_P8, KC_P9, KC_PAST
+#define _____________NUMPAD_2_____________ KC_P4, KC_P5, KC_P6, KC_PMNS
+#define _____________NUMPAD_3_____________ KC_P1, KC_P2, KC_P3, KC_PPLS
+#define _____________NUMPAD_4_____________ MO(_LOWER), KC_P0, KC_PDOT, KC_PENT
+
+#define ______________FUNC_1______________ KC_F1, KC_F2, KC_F3, KC_VOLU
+#define ______________FUNC_2______________ KC_F4, KC_F5, KC_F6, KC_VOLD
+#define ______________FUNC_3______________ KC_F7, KC_F8, KC_F9, KC_PEQL
+#define ______________FUNC_4______________ KC_F10, KC_F11, KC_12, KC_PENT
 
 #define _______________NAV_1______________ KC_LEFT, KC_DOWN, KC_UP, KC_RGHT
 #define _______________NAV_2______________ KC_PGDN, KC_LEFT, KC_DOWN, KC_RGHT
