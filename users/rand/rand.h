@@ -40,6 +40,7 @@ uint16_t encoder_rotated_timer;
 #define _RAISE 4
 #define _ADJUST 5
 #define _NUMPAD 6
+#define _FL 7
 
 // Shortcut Keys
 #define K_LOCK LGUI(LCTL(KC_Q)) // Locks screen on MacOS
@@ -141,7 +142,7 @@ uint16_t encoder_rotated_timer;
 #define _____________NUMPAD_1_____________ KC_P7, KC_P8, KC_P9, KC_PAST
 #define _____________NUMPAD_2_____________ KC_P4, KC_P5, KC_P6, KC_PMNS
 #define _____________NUMPAD_3_____________ KC_P1, KC_P2, KC_P3, KC_PPLS
-#define _____________NUMPAD_4_____________ MO(_LOWER), KC_P0, KC_PDOT, KC_PENT
+#define _____________NUMPAD_4_____________ LT_CFL, KC_P0, KC_PDOT, KC_PENT
 
 #define ______________FUNC_1______________ KC_F1, KC_F2, KC_F3, KC_VOLU
 #define ______________FUNC_2______________ KC_F4, KC_F5, KC_F6, KC_VOLD
