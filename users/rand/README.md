@@ -1,4 +1,4 @@
-# QMK User Configuration for [ninjonas](https://github.com/ninjonas/qmk-yonas)
+# QMK User Configuration for [rand](https://github.com/randallhidajat/qmk_firmware)
 Tired of copying and pasting the same macros and tap dances for all my keymaps. Utilizing user keymaps functionality.
 See: https://docs.qmk.fm/#/feature_userspace
 
