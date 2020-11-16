@@ -71,7 +71,7 @@ void render_mod_state(uint8_t modifiers) {
   oled_write_P(PSTR("ALT"), (modifiers & MOD_MASK_ALT));
   oled_white_space();
   oled_write_P(PSTR("GUI"), (modifiers & MOD_MASK_GUI));
-} 
+}
 
 void render_status(void){
   render_layout_state();
@@ -91,7 +91,7 @@ static void render_logo(void) {
 }
 
 void oled_task_user(void) {
-    if (timer_elapsed32(oled_timer) > 25000) {
+    if (timer_elapsed32(oled_timer) > 15000) {
         oled_off();
         return;
     }
