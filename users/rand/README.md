@@ -2,22 +2,23 @@
 Tired of copying and pasting the same macros and tap dances for all my keymaps. Utilizing user keymaps functionality.
 See: https://docs.qmk.fm/#/feature_userspace
 
-## [ninjonas.c](ninjonas.c)
+**Taken and modified from [ninjonas](https://github.com/qmk/qmk_firmware/tree/master/users/ninjonas)**
+
+## [rand.c](rand.c)
 - ninjonas [QMK user configuration](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_userspace.md)
-- On `keymap.c` include `ninjonas.h`
+- On `keymap.c` include `rand.h`
   ```c
-  #include "ninjonas.h"
+  #include "rand.h"
   ```
 
 ## Supported Keyboards
-- [Crkbd ](../../keyboards/crkbd/keymaps/ninjonas)
-- [Hotdox](../../keyboards/hotdox/keymaps/ninjonas)
-- [Pinky3](../../keyboards/pinky/3/keymaps/ninjonas)
-- [Lily58](../../keyboards/lily58/keymaps/ninjonas)
-- [Kyria](../../keyboards/kyria/keymaps/ninjonas)
+- [Crkbd ](../../keyboards/crkbd/keymaps/rand)
+- [Candybar Lefty](../../keyboards/tkc/candybar/lefty/keymaps/rand)
+- [Ave](../../keyboards/kingly_keys/ave/ortho/keymaps/rand)
+- [Planck](../../keyboards/planck/keymaps/rand)
 
 ## Features
-### [Keys](ninjonas.h)
+### [Keys](rand.h)
 |Code | Description |
 |---|---|
 |K_LOCK | MacOS shortcut to execute lock command Cmd + CTRL + Q |
@@ -25,7 +26,7 @@ See: https://docs.qmk.fm/#/feature_userspace
 |K_MDSH | MacOS shortcut to get em-dash `–` |
 |K_CPRF | Cmd + Shift + M. Used for switching Google Chrome profiles | 
 
-### [Layers](ninjonas.h)
+### [Layers](rand.h)
 |Code | Description |
 |---|---|
 |LT_LOW | Tap for ENTER, hold for RAISE |
@@ -44,7 +45,7 @@ Predefined keyboard layout templates to speed up configuring split keyboards
 |---|---|
 |QWERTY | Qwerty Layout |
 |DVORAK | Dvorak Layout |
-|COLEMAK | Colemak Layout |
+|GAMING | Gaming Layout |
 |NUM | Number Rows |
 |FUNC | Function Rows |
 |SYM | Symbol Rows \(When holding shift on numbers\) |
@@ -65,6 +66,7 @@ Predefined keyboard layout templates to speed up configuring split keyboards
 |M_SHFT | Sends Cmd + alt + shift to a keycode to activate [ShiftIt](https://github.com/fikovnik/ShiftIt) |
 |M_CODE | Opens [Visual Studio Code](https://code.visualstudio.com/) on current directory |
 |M_TERM | Launches Spotlight and calls Terminal |
+|M_00 | Types out double 0s `In progress`
 |M_XXX1 to M_XXX5 | Reserved for secret macros see [Secrets](#secrets)  |
 
 ### [Tap-Dance](tap_dances.h)
@@ -78,6 +80,7 @@ Predefined keyboard layout templates to speed up configuring split keyboards
 |T_GUI | Tap once for Cmd, double to open spotlight |
 |T_CPAP | Tap for Cmd + V, hold for Cmd + C, double tap to open [Line](https://line.me/en/) app, triple tap for itunes. |
 |T_Y | Tap for Y, double tap for NUMPAD layer |
+|T_RAI | Tap for space, hold for `RAISE`, tap and hold for `LOWER` |
 
 ### [Combos](combos.h)
 |Code | Description |
@@ -93,7 +96,7 @@ There's times where you have macros you don't want to share like emails, an addr
 
 ```c
 // secrets.c
-#include "ninjonas.h"
+#include "rand.h"
 
 static const char * const secret[] = {
   "BLANK1",

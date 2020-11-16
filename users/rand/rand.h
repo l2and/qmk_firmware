@@ -192,7 +192,7 @@ uint16_t encoder_rotated_timer;
 #define _______GAMING_RIGHT______ T_GUI, LT_LOW, KC_LALT
 #define _________MEDIA_3_________ XXXXXXX, KC_MRWD, KC__VOLDOWN
 
-#if defined(KEYBOARD_crkbd_rev1) || defined(KEYBOARD_kyria_rev1)
+#if defined(KEYBOARD_crkbd_rev1)
   #define ________MOD_LEFT_________ KC_LCTL, LT_LOW, T_GUI
   #define ________MOD_RIGHT________ KC_SPC, LT_RAI, KC_LALT
 #else
@@ -202,5 +202,5 @@ uint16_t encoder_rotated_timer;
 
 // Layout wrappers
 #define LAYOUT_wrapper(...) LAYOUT(__VA_ARGS__)
-#define LAYOUT_ergodox_wrapper(...) LAYOUT_ergodox(__VA_ARGS__)
 #define LAYOUT_ortho_all_wrapper(...) LAYOUT_ortho_all(__VA_ARGS__)
+#define LAYOUT_planck_grid_wrapper(...) LAYOUT_planck_grid(__VA_ARGS__)
