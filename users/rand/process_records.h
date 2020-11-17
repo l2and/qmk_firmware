@@ -8,6 +8,7 @@ enum custom_keycodes {
   GAMING,
   // Custom Macros
   M_PYNV,
+  M_FLAM,
   M_SHFT,
   M_MAKE,
   M_MALL,

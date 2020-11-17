@@ -1,4 +1,20 @@
-# QMK User Configuration for [rand](https://github.com/randallhidajat/qmk_firmware)
+Copyright 2020 @l2and
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
+# QMK User Configuration for [rand](https://github.com/l2and/qmk_firmware)
 Tired of copying and pasting the same macros and tap dances for all my keymaps. Utilizing user keymaps functionality.
 See: https://docs.qmk.fm/#/feature_userspace
 
@@ -32,13 +48,13 @@ See: https://docs.qmk.fm/#/feature_userspace
 |LT_LOW | Tap for ENTER, hold for RAISE |
 |LT_RAI | Tap for SPACE, hold for LOWER |
 
-### [Mod-Taps](ninjonas.h)
+### [Mod-Taps](rand.h)
 |Code | Description |
 |---|---|
 |MT_DEL | Tap for Delete, hold for ALT + SHIFT |
 |MT_EQL | Tap for =, SHIFT |
 
-### [Layout Blocks](ninjonas.h)
+### [Layout Blocks](rand.h)
 Predefined keyboard layout templates to speed up configuring split keyboards
 
 |Code | Description |
@@ -59,12 +75,13 @@ Predefined keyboard layout templates to speed up configuring split keyboards
 |Code | Description |
 |---|---|
 |M_PYNV | Macro to activate pyenv with the name `jira` |
+|M_FLAM | open Flameshot |
 |M_MAKE | Macro to send QMK make command to compile keyboard |
-|M_MALL | Macro to send QMK make command to all [ninjonas](#Supported%20Keyboards) keyboards |
+|M_MALL | Macro to send QMK make command to all [rand](#Supported%20Keyboards) keyboards |
 |M_FLSH | Macro to send QMK make command to compile keyboard with the correct bootloader |
 |M_VRSN | Macro to send QMK version |
 |M_SHFT | Sends Cmd + alt + shift to a keycode to activate [ShiftIt](https://github.com/fikovnik/ShiftIt) |
-|M_CODE | Opens [Visual Studio Code](https://code.visualstudio.com/) on current directory |
+|M_CODE | Opens Sulbime Text on current directory |
 |M_TERM | Launches Spotlight and calls Terminal |
 |M_00 | Types out double 0s `In progress`
 |M_XXX1 to M_XXX5 | Reserved for secret macros see [Secrets](#secrets)  |
@@ -77,8 +94,8 @@ Predefined keyboard layout templates to speed up configuring split keyboards
 |T_RBRC | Tap once for ], double for forward browser |
 |T_TAB | Tap once for TAB, double for CTRL + TAB |
 |T_GRV | Tap once for GRV, double for Cmd + GRV |
-|T_GUI | Tap once for Cmd, double to open spotlight |
-|T_CPAP | Tap for Cmd + V, hold for Cmd + C, double tap to open [Line](https://line.me/en/) app, triple tap for itunes. |
+|T_GUI | Tap once for Cmd, double to open launcher in PopOS |
+|T_CPAP | Tap for Ctl + V, hold for Ctl + C, double tap to open [Franz](https://meetfranz.com) app, triple tap for Shopify. |
 |T_Y | Tap for Y, double tap for NUMPAD layer |
 |T_RAI | Tap for space, hold for `RAISE`, tap and hold for `LOWER` |
 

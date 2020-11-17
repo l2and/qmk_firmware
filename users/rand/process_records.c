@@ -34,6 +34,19 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
       }
       break;
 
+    // Open flameshot
+    case M_FLAM:
+      if (record->event.pressed) {
+        register_code(KC_LSFT);
+        register_code(KC_LGUI);
+        register_code(KC_5);
+      } else {
+        unregister_code(KC_LGUI);
+        unregister_code(KC_LSFT);
+        unregister_code(KC_5);
+      }
+      break;
+
     // Sends QMK make command to compile keyboard
     case M_MAKE:
      if (record->event.pressed) {
@@ -44,7 +57,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     // Sends QMK make command to compile all keyboards
     case M_MALL:
      if (record->event.pressed) {
-        SEND_STRING("rm -f *.hex && rm -rf .build/ && make crkbd:ninjonas lily58:ninjonas hotdox:ninjonas pinky/3:ninjonas kyria:ninjonas\n");
+        SEND_STRING("rm -f *.hex && rm -rf .build/ && make crkbd:rand tkc/candybar/lefty:rand kingly_keys/ave/ortho:rand\n");
       }
       break;
 
@@ -74,17 +87,17 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
       }
       break;
 
-    // Opens Visual Studio Code on current directory
+    // Opens Sublime on current directory
     case M_CODE:
       if (record->event.pressed) {
-        SEND_STRING("code .\n");
+        SEND_STRING("subl .\n");
       }
       break;
 
     // Opens Terminal
     case M_TERM:
       if (record->event.pressed) {
-        SEND_STRING(SS_DOWN(X_LGUI) SS_TAP(X_SPACE) SS_UP(X_LGUI));
+        SEND_STRING(SS_DOWN(X_LGUI) SS_TAP(X_SLASH) SS_UP(X_LGUI));
         wait_ms(250);
         SEND_STRING("terminal\n");
       }

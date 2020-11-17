@@ -22,10 +22,6 @@
 #ifdef TAP_DANCE_ENABLE
   #include "tap_dances.h"
 #endif
-#if defined(KEYBOARD_lily58_rev1) & defined(PROTOCOL_LUFA)
-  #include "lufa.h"
-  #include "split_util.h"
-#endif
 
 #if defined(KEYBOARD_kingly_keys_ave_ortho) & defined(RGBLIGHT_ENABLE)
     /* ws2812 RGB LED */
@@ -117,7 +113,6 @@ uint16_t encoder_rotated_timer;
   #define _____________________GAMING_R2_____________________ KC_H, KC_J, KC_K, KC_L, KC_SCLN, KC_QUOT
   #define _____________________GAMING_R3_____________________ KC_K, KC_M, KC_COMM, KC_DOT, KC_SLSH, KC_ENT
 
-  #define ______________________MOD_1_________________________ KC_MUTE, KC_CAPS, KC_BSLS,   KC_MINUS,   KC_EQUAL
   #define ______________________MOD_4_________________________ LT_ADJ, KC_LCTL, KC_LALT, T_GUI, LT_LOW, KC_SPC, KC_SPC, LT_RAI, _______________NAV_1______________
 
   #define _____________________NUM_LEFT_______________________ T_GRV, KC_1, KC_2, KC_3, KC_4, KC_5
@@ -176,6 +171,10 @@ uint16_t encoder_rotated_timer;
   #define _____________________NUMPAD_4_______________________ LT_CFL, KC_P0, KC_PDOT, KC_PENT
 #endif
 
+// Kingly Keys Ave Top Row
+#define _______________MOD_1______________ KC_MUTE, T_ESC, T_CPAP, T_GUI, M_TERM
+#define _______________MOD_2______________ KC_MUTE, T_ESC, T_CPAP, M_FLAM, M_TERM
+// End Ave layouts
 
 #define _______________NAV_1______________ KC_LEFT, KC_DOWN, KC_UP, KC_RGHT
 #define _______________NAV_2______________ KC_PGDN, KC_LEFT, KC_DOWN, KC_RGHT
