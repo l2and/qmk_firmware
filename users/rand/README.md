@@ -21,7 +21,7 @@ See: https://docs.qmk.fm/#/feature_userspace
 **Taken and modified from [ninjonas](https://github.com/qmk/qmk_firmware/tree/master/users/ninjonas)**
 
 ## [rand.c](rand.c)
-- ninjonas [QMK user configuration](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_userspace.md)
+- l2and [QMK user configuration](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_userspace.md)
 - On `keymap.c` include `rand.h`
   ```c
   #include "rand.h"

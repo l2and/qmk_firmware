@@ -113,8 +113,6 @@ uint16_t encoder_rotated_timer;
   #define _____________________GAMING_R2_____________________ KC_H, KC_J, KC_K, KC_L, KC_SCLN, KC_QUOT
   #define _____________________GAMING_R3_____________________ KC_K, KC_M, KC_COMM, KC_DOT, KC_SLSH, KC_ENT
 
-  #define ______________________MOD_4_________________________ LT_ADJ, KC_LCTL, KC_LALT, T_GUI, LT_LOW, KC_SPC, KC_SPC, LT_RAI, _______________NAV_1______________
-
   #define _____________________NUM_LEFT_______________________ T_GRV, KC_1, KC_2, KC_3, KC_4, KC_5
   #define _____________________NUM_RIGHT______________________ KC_6, KC_7, KC_8, KC_9, KC_0, KC_BSPC
 
@@ -139,6 +137,10 @@ uint16_t encoder_rotated_timer;
   #define _____________________LOWER_R3_______________________ XXXXXXX, _______________NAV_1______________, KC_ENT
 
   #define _____________________ADJUST_L1______________________ M_MAKE, EEP_RST, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX
+
+// ORTHO BLOCK
+  #define ______________________MOD_4_________________________ T_CPAP, KC_LCTL, KC_LALT, T_GUI, LT_LOW, KC_SPC, KC_SPC, LT_RAI, _______________NAV_1______________
+
 
 #endif
 

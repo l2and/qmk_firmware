@@ -14,6 +14,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 #include "rand.h"
+#if !defined(KEYBOARD_planck_light)
 #if defined(KEYBOARD_kingly_keys_ave_ortho)
   // RGB Indicator Customization: (100% stolen from Jetpacktuxedo)
   void keyboard_post_init_user(void) {
@@ -67,4 +68,5 @@
     #endif
     layer_state_set_user(layer_state);
   }
+#endif
 #endif
