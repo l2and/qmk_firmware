@@ -134,9 +134,9 @@ uint16_t encoder_rotated_timer;
 
   #define _____________________LOWER_R1_______________________ _______________NAV_1______________, XXXXXXX, K_MDSH
   #define _____________________LOWER_R2_______________________ XXXXXXX, KC_UNDS, KC_PLUS, KC_LCBR, KC_RCBR, KC_PIPE
-  #define _____________________LOWER_R3_______________________ XXXXXXX, _______________NAV_1______________, KC_ENT
+  #define _____________________LOWER_R3_______________________ T_CPAP, _______________NAV_1______________, KC_ENT
 
-  #define _____________________ADJUST_L1______________________ M_MAKE, EEP_RST, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX
+  #define _____________________ADJUST_L1______________________ M_MAKE, RESET, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX
 
 // ORTHO BLOCK
   #define ______________________MOD_4_________________________ T_CPAP, KC_LCTL, KC_LALT, T_GUI, LT_LOW, KC_SPC, KC_SPC, LT_RAI, _______________NAV_1______________

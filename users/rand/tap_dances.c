@@ -38,20 +38,20 @@ void copy_paste_app_finished (qk_tap_dance_state_t *state, void *user_data) {
   copy_paste_app_tap_state.state = cur_dance(state);
   switch (copy_paste_app_tap_state.state) {
     case SINGLE_TAP: 
-      tap_code16(LCTL(KC_V)); // Tap Cmd + V
+      tap_code16(LCTL(KC_DOT)); // tap Ctl + . (paste in dvorak)
       break;
     case SINGLE_HOLD: 
-      tap_code16(LCTL(KC_C)); // Hold Cmd + C
+      tap_code16(LCTL(KC_I)); // Hold Ctrl + I (copy in dvorak)
       break;
     case DOUBLE_TAP: 
-      SEND_STRING(SS_DOWN(X_LGUI) SS_TAP(X_SLASH) SS_UP(X_LGUI));
+      SEND_STRING(SS_DOWN(X_LGUI) SS_TAP(X_LBRC) SS_UP(X_LGUI));
       wait_ms(250);
-      SEND_STRING("franz\n");
+      SEND_STRING("yoal/\n"); // open Franz
       break;
     case TRIPLE_TAP: 
-      SEND_STRING(SS_DOWN(X_LGUI) SS_TAP(X_SLASH) SS_UP(X_LGUI));
+      SEND_STRING(SS_DOWN(X_LGUI) SS_TAP(X_LBRC) SS_UP(X_LGUI));
       wait_ms(250);
-      SEND_STRING("Spotify\n");
+      SEND_STRING(";rskgyt\n"); //open Spotify
       break;
   }
 }
