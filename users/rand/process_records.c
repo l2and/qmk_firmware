@@ -87,19 +87,19 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
       }
       break;
 
-    // Opens Sublime on current directory
+    // Opens Sublime on current directory in dvorak
     case M_CODE:
       if (record->event.pressed) {
-        SEND_STRING("subl .\n");
+        SEND_STRING("ognp .\n");
       }
       break;
 
-    // Opens Terminal
+    // Opens Tilix in dvorak
     case M_TERM:
       if (record->event.pressed) {
-        SEND_STRING(SS_DOWN(X_LGUI) SS_TAP(X_SLASH) SS_UP(X_LGUI));
+        SEND_STRING(SS_DOWN(X_LGUI) SS_TAP(X_LBRC) SS_UP(X_LGUI));
         wait_ms(250);
-        SEND_STRING("terminal\n");
+        SEND_STRING("kcpcb\n"); 
       }
       break;
 

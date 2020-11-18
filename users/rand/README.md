@@ -18,6 +18,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 Tired of copying and pasting the same macros and tap dances for all my keymaps. Utilizing user keymaps functionality.
 See: https://docs.qmk.fm/#/feature_userspace
 
+* (WIP) modifying original settings to work in Pop_OS
+* (WIP) still using default qwerty keymap, but wih dvorak selected in the settings. As such, shortcuts are modified to send the correct keystrokes using the default qwerty qmk base, but with dvorak selected in settings
+
 **Taken and modified from [ninjonas](https://github.com/qmk/qmk_firmware/tree/master/users/ninjonas)**
 
 ## [rand.c](rand.c)

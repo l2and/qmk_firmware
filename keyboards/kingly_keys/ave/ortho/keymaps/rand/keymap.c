@@ -29,7 +29,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /* _QWERTY (Base)
     *
 * ┌────┐ ┌────┐                                       ┌────┬────┬────┐
-* │MUTE│ │Esc │                                       │Cp/P│Laun│Term│
+* │MUTE│ │Esc │                                       │Cp/P│Laun│CPRF│
 * └────┘ └────┘                                       └────┴────┴────┘
 * ┌────┐ ┌────┬────┬────┬────┬────┬────┬────┬────┬────┬────┬────┬────┐
 * │Home│ │Tab │ Q  │ W  │ E  │ R  │ T  │ Y  │ U  │ I  │ O  │ P  │BkSp│
@@ -58,7 +58,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       /* _DVORAK
     *
 * ┌────┐ ┌────┐                                       ┌────┬────┬────┐
-* │MUTE│ │Esc │                                       │Cp/P│Laun│Term│
+* │MUTE│ │Esc │                                       │Cp/P│Laun│CPRF│
 * └────┘ └────┘                                       └────┴────┴────┘
 * ┌────┐ ┌────┬────┬────┬────┬────┬────┬────┬────┬────┬────┬────┬────┐
 * │Home│ │Tab │ '  │ ,  │ .  │ P  │ Y  │ F  │ G  │ C  │ R  │ L  │BkSp|
@@ -87,7 +87,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         /* _GAMING 
     *
 * ┌────┐ ┌────┐                                       ┌────┬────┬────┐
-* │MUTE│ │Esc │                                       │Cp/P│Laun│Term│
+* │MUTE│ │Esc │                                       │Cp/P│Laun│CPRF│
 * └────┘ └────┘                                       └────┴────┴────┘
 * ┌────┐ ┌────┬────┬────┬────┬────┬────┬────┬────┬────┬────┬────┬────┐
 * │ 1  │ │Tab │ Q  │ W  │ E  │ R  │ T  │ Y  │ U  │ I  │ O  │ P  │BkSp│

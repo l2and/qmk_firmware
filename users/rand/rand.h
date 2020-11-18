@@ -53,8 +53,9 @@ uint16_t encoder_rotated_timer;
 // Shortcut Keys
 #define K_LOCK LGUI(LCTL(KC_Q)) // Locks screen on MacOS
 #define K_CSCN LGUI(LCTL(LSFT(KC_4))) // Copy a portion of the screen to the clipboard
-#define K_CPRF LGUI(LSFT(KC_M)) //  Cmd + Shift + M. Used for switching Google Chrome profiles
+#define K_CPRF LCTL(LSFT(KC_M)) //  Ctl + Shift + M. Used for switching Google Chrome profiles
 #define K_MDSH LSFT(LALT(KC_MINS))
+#define K_TILE LGUI(KC_Z) // starts tiling for Pop_OS
 
 // Layer Keys
 #define LT_LOW MO(_LOWER)
@@ -174,8 +175,8 @@ uint16_t encoder_rotated_timer;
 #endif
 
 // Kingly Keys Ave Top Row
-#define _______________MOD_1______________ KC_MUTE, T_ESC, T_CPAP, T_GUI, M_TERM
-#define _______________MOD_2______________ KC_MUTE, T_ESC, T_CPAP, M_FLAM, M_TERM
+#define _______________MOD_1______________ KC_MUTE, K_TILE, T_CPAP, T_GUI, K_CPRF
+#define _______________MOD_2______________ KC_MUTE, K_TILE, T_CPAP, M_FLAM, M_TERM
 // End Ave layouts
 
 #define _______________NAV_1______________ KC_LEFT, KC_DOWN, KC_UP, KC_RGHT
